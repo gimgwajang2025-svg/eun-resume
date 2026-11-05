@@ -92,6 +92,7 @@
 
 - 2026-11-05 · 총괄 지침 CLAUDE.md 만들기 · CLAUDE.md 새로 만듦 (0~6번 칸, 1~4번은 비워 둠)
 - 2026-11-05 · 'EUN 이력서' 설계 채우기 + 첫 버전 만들기 · 1~4번 칸 채움(제목 · 부제목 · 색 코드 제안), 0번에 파일 구조 · 홈페이지 규칙 추가, index.html · style.css · script.js · images/ 만듦
+- 2026-11-05 · GitHub로 배포하기 (새 계정 gimgwajang2025-svg) · 공개 저장소 eun-resume 만들고 올림, GitHub Pages 켬
 
 ---
 
@@ -101,9 +102,13 @@
 - CLAUDE.md 만들기 (2026-11-05)
 - 1~4번 칸(목적 · 구성 · 기능 · 디자인 가이드) 채우기 (2026-11-05)
 - 홈페이지 첫 버전 만들기 – index.html · style.css · script.js (2026-11-05)
+- GitHub에 올림 (2026-11-05)
+  - 계정: gimgwajang2025-svg
+  - 저장소: https://github.com/gimgwajang2025-svg/eun-resume (공개)
+  - 홈페이지 주소: https://gimgwajang2025-svg.github.io/eun-resume/
+  - 고친 뒤 다시 올리면 1~2분 뒤 홈페이지에 반영됨
 
 **다음 할 일**
 - 진짜 내용 넣기: 자기소개 · 경력 · 자격사항 · 학력 (지금은 예시 글)
 - 내 사진을 `images/` 폴더에 넣기 (지금은 회색 자리)
 - 진짜 이메일 · 카카오톡 채널 주소 · 구글 폼 주소 넣기
-- GitHub에 올리고 GitHub Pages 켜기 (아직 안 올림)
