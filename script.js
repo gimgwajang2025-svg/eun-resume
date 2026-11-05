@@ -49,16 +49,17 @@ function markCenter() {
 // 천천히 출발해서 천천히 멈추는 이동
 const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 let animId = null;
+let safetyId = null;
 
 function goTo(index) {
   const card = cards[Math.max(0, Math.min(cards.length - 1, index))];
   const target = card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
-  if (reduceMotion) { track.scrollLeft = target; markCenter(); return; }
+  // 컴퓨터에서 '애니메이션 효과'를 꺼 두어도, 버튼을 눌러 넘기는 움직임은 부드럽게 보여 줘요 (조금 더 짧게)
 
   cancelAnimationFrame(animId);
   const start = track.scrollLeft;
   const distance = target - start;
-  const duration = 700;
+  const duration = reduceMotion ? 450 : 700;
   const t0 = performance.now();
   track.classList.add('animating');
 
@@ -72,11 +73,23 @@ function goTo(index) {
     }
   }
   animId = requestAnimationFrame(step);
+
+  // 안전장치: 브라우저가 움직임을 멈춰 두어도 정해진 시간 뒤에는 꼭 도착
+  clearTimeout(safetyId);
+  safetyId = setTimeout(() => {
+    if (track.classList.contains('animating')) {
+      cancelAnimationFrame(animId);
+      track.scrollLeft = target;
+      track.classList.remove('animating');
+      markCenter();
+    }
+  }, duration + 150);
 }
 
 // 넘어가는 중에 손으로 밀면, 자동 이동을 멈추고 손을 따라가기
 function stopAnim() {
   cancelAnimationFrame(animId);
+  clearTimeout(safetyId);
   track.classList.remove('animating');
 }
 track.addEventListener('pointerdown', stopAnim);
