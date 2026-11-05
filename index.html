@@ -32,90 +32,94 @@
   <main>
     <!-- 히어로 -->
     <section id="home" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text reveal">
-          <p class="hero-hello">안녕하세요, EUN입니다</p>
-          <h1>따뜻하게 일하고,<br>끝까지 책임지는 사람</h1>
-          <p class="hero-sub">함께 일할 회사를 찾고 있어요. 편하게 연락 주세요.</p>
-          <a href="#contact-form" class="btn">연락하기</a>
-        </div>
-        <div class="photo-box reveal" aria-label="사진 자리">
+      <h1 class="hero-logo" aria-label="EUN">EUN</h1>
+
+      <div class="hero-stage reveal">
+        <div class="hero-photo" aria-label="사진 자리">
           <!-- 사진을 넣으려면: images 폴더에 profile.jpg를 넣고 아래 줄의 주석을 풀어 주세요 -->
           <!-- <img src="images/profile.jpg" alt="EUN 사진"> -->
-          <span>사진 자리</span>
+          <span>PHOTO</span>
         </div>
+        <div class="pedestal" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-copy container reveal">
+        <p class="eyebrow">PORTFOLIO · RESUME 2026</p>
+        <p class="hero-sub">정돈된 일, 끝까지 책임지는 태도. 함께 일할 회사를 찾고 있습니다.</p>
+        <a href="#contact-form" class="btn btn-gold">연락하기</a>
       </div>
     </section>
 
     <!-- 문의 -->
-    <section id="contact-form" class="section section-tint">
-      <div class="container reveal">
+    <section id="contact-form" class="section">
+      <div class="container center reveal">
+        <p class="eyebrow">CONTACT</p>
         <h2>문의</h2>
-        <p class="section-lead">면접 제안이나 궁금한 점이 있으면 편한 방법으로 연락해 주세요.</p>
-        <div class="cards cards-3">
-          <a class="card card-link" href="mailto:0000@gmail.com">
-            <span class="card-icon" aria-hidden="true">✉️</span>
-            <h3>메일 보내기</h3>
-            <p>0000@gmail.com</p>
-          </a>
-          <a class="card card-link" href="#" target="_blank" rel="noopener">
-            <span class="card-icon" aria-hidden="true">💬</span>
-            <h3>카카오톡 채널</h3>
-            <p>채널 주소를 넣을 자리</p>
-          </a>
-          <a class="card card-link" href="#" target="_blank" rel="noopener">
-            <span class="card-icon" aria-hidden="true">📝</span>
-            <h3>구글 폼으로 문의</h3>
-            <p>폼 주소를 넣을 자리</p>
-          </a>
+        <p class="lead">면접 제안이나 궁금한 점이 있으면 편한 방법으로 연락해 주세요.</p>
+        <div class="pill-row">
+          <a class="btn btn-line" href="mailto:0000@gmail.com">메일 보내기</a>
+          <a class="btn btn-line" href="#" target="_blank" rel="noopener">카카오톡 채널</a>
+          <a class="btn btn-line" href="#" target="_blank" rel="noopener">구글 폼 문의</a>
         </div>
       </div>
     </section>
 
     <!-- 자기소개 -->
-    <section id="about" class="section">
-      <div class="container reveal">
+    <section id="about" class="section section-gray">
+      <div class="container center reveal">
+        <p class="eyebrow">ABOUT</p>
         <h2>자기소개</h2>
-        <p class="section-lead">맡은 일은 끝까지 해내고, 함께 일하는 사람을 편하게 해 주는 사람이 되고 싶습니다. (예시 글이에요. 내 이야기로 바꿀 예정)</p>
-        <div class="cards cards-3">
-          <div class="card">
-            <h3>꼼꼼함</h3>
-            <p>작은 실수도 놓치지 않도록 두 번 확인합니다.</p>
-          </div>
-          <div class="card">
-            <h3>책임감</h3>
-            <p>약속한 날짜와 품질을 지킵니다.</p>
-          </div>
-          <div class="card">
-            <h3>소통</h3>
-            <p>쉽고 따뜻한 말로 먼저 다가갑니다.</p>
-          </div>
+        <div class="about-cols">
+          <p>맡은 일은 끝까지 해내고, 작은 부분까지 두 번 확인합니다. 약속한 날짜와 품질을 지키는 것이 가장 큰 자신감입니다. (예시 글)</p>
+          <p>쉽고 따뜻한 말로 먼저 다가가, 함께 일하는 사람이 편하게 느끼도록 합니다. 새로운 일도 빠르게 배워 제 것으로 만듭니다. (예시 글)</p>
+        </div>
+      </div>
+      <div class="container about-photos reveal">
+        <!-- 사진을 넣으려면 images 폴더에 about-1.jpg ~ about-3.jpg를 넣고 주석을 풀어 주세요. 자동으로 흑백이 돼요 -->
+        <figure class="bw-photo"><!-- <img src="images/about-1.jpg" alt="일하는 모습"> --><span>PHOTO 01</span></figure>
+        <figure class="bw-photo"><!-- <img src="images/about-2.jpg" alt="작업 공간"> --><span>PHOTO 02</span></figure>
+        <figure class="bw-photo"><!-- <img src="images/about-3.jpg" alt="일상"> --><span>PHOTO 03</span></figure>
+      </div>
+    </section>
+
+    <!-- 경력 캐러셀 -->
+    <section id="career" class="section">
+      <div class="container center reveal">
+        <p class="eyebrow">CAREER</p>
+        <h2>경력</h2>
+      </div>
+      <div class="carousel reveal">
+        <div class="carousel-track" tabindex="0" aria-label="경력 목록 (좌우로 넘겨 보세요)">
+          <article class="capsule">
+            <p class="time">2023.03 – 현재</p>
+            <h3>○○회사</h3>
+            <p class="role">사무 담당</p>
+            <p>문서 정리, 일정 관리, 고객 응대 (예시)</p>
+          </article>
+          <article class="capsule">
+            <p class="time">2020.01 – 2023.02</p>
+            <h3>△△회사</h3>
+            <p class="role">고객 지원</p>
+            <p>고객 문의 접수와 해결 (예시)</p>
+          </article>
+          <article class="capsule">
+            <p class="time">2018.07 – 2019.12</p>
+            <h3>□□회사</h3>
+            <p class="role">인턴</p>
+            <p>자료 조사와 보고서 작성 지원 (예시)</p>
+          </article>
+        </div>
+        <div class="carousel-nav">
+          <button class="arrow prev" aria-label="이전 경력">←</button>
+          <button class="arrow next" aria-label="다음 경력">→</button>
         </div>
       </div>
     </section>
 
-    <!-- 경력 -->
-    <section id="career" class="section section-tint">
-      <div class="container reveal">
-        <h2>경력</h2>
-        <ul class="timeline">
-          <li>
-            <p class="time">2023.03 – 현재</p>
-            <h3>○○회사 · 사무 담당</h3>
-            <p>예시 글: 문서 정리, 일정 관리, 고객 응대를 맡고 있어요.</p>
-          </li>
-          <li>
-            <p class="time">2020.01 – 2023.02</p>
-            <h3>△△회사 · 고객 지원</h3>
-            <p>예시 글: 고객 문의를 받고 해결했어요.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- 자격사항 -->
-    <section id="license" class="section">
-      <div class="container reveal">
+    <section id="license" class="section section-gray">
+      <div class="container narrow center reveal">
+        <p class="eyebrow">LICENSE</p>
         <h2>자격사항</h2>
         <ul class="list">
           <li><strong>컴퓨터활용능력 2급</strong><span>2022.06 · 대한상공회의소 (예시)</span></li>
@@ -125,8 +129,9 @@
     </section>
 
     <!-- 학력 -->
-    <section id="education" class="section section-tint">
-      <div class="container reveal">
+    <section id="education" class="section">
+      <div class="container narrow center reveal">
+        <p class="eyebrow">EDUCATION</p>
         <h2>학력</h2>
         <ul class="list">
           <li><strong>○○대학교 · ○○학과</strong><span>2015.03 – 2019.02 · 졸업 (예시)</span></li>
@@ -136,24 +141,24 @@
     </section>
 
     <!-- 연락처 -->
-    <section id="contact" class="section">
-      <div class="container reveal">
+    <section id="contact" class="section section-gray">
+      <div class="container narrow center reveal">
+        <p class="eyebrow">INFO</p>
         <h2>연락처</h2>
         <ul class="list">
           <li><strong>이메일</strong><span><a href="mailto:0000@gmail.com">0000@gmail.com</a></span></li>
           <li><strong>활동 지역</strong><span>경기도 하남시</span></li>
         </ul>
-        <a href="#contact-form" class="btn">연락하기</a>
+        <a href="#contact-form" class="btn btn-gold">연락하기</a>
       </div>
     </section>
   </main>
 
   <!-- 푸터 -->
   <footer class="footer">
-    <div class="container">
+    <div class="container center">
       <p class="footer-name">EUN</p>
-      <p>주소: 경기도 하남시 미사0000</p>
-      <p>이메일: <a href="mailto:0000@gmail.com">0000@gmail.com</a></p>
+      <p>주소 경기도 하남시 미사0000 · 이메일 <a href="mailto:0000@gmail.com">0000@gmail.com</a></p>
       <p class="copy">© 2026 EUN</p>
     </div>
   </footer>
