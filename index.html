@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EUN 이력서</title>
+  <meta name="description" content="EUN을 소개하는 이력서 홈페이지입니다.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">EUN 이력서</a>
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="nav">
+        <a href="#home">홈</a>
+        <a href="#contact-form">문의</a>
+        <a href="#about">자기소개</a>
+        <a href="#career">경력</a>
+        <a href="#license">자격사항</a>
+        <a href="#education">학력</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 히어로 -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="hero-hello">안녕하세요, EUN입니다</p>
+          <h1>따뜻하게 일하고,<br>끝까지 책임지는 사람</h1>
+          <p class="hero-sub">함께 일할 회사를 찾고 있어요. 편하게 연락 주세요.</p>
+          <a href="#contact-form" class="btn">연락하기</a>
+        </div>
+        <div class="photo-box reveal" aria-label="사진 자리">
+          <!-- 사진을 넣으려면: images 폴더에 profile.jpg를 넣고 아래 줄의 주석을 풀어 주세요 -->
+          <!-- <img src="images/profile.jpg" alt="EUN 사진"> -->
+          <span>사진 자리</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 문의 -->
+    <section id="contact-form" class="section section-tint">
+      <div class="container reveal">
+        <h2>문의</h2>
+        <p class="section-lead">면접 제안이나 궁금한 점이 있으면 편한 방법으로 연락해 주세요.</p>
+        <div class="cards cards-3">
+          <a class="card card-link" href="mailto:0000@gmail.com">
+            <span class="card-icon" aria-hidden="true">✉️</span>
+            <h3>메일 보내기</h3>
+            <p>0000@gmail.com</p>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener">
+            <span class="card-icon" aria-hidden="true">💬</span>
+            <h3>카카오톡 채널</h3>
+            <p>채널 주소를 넣을 자리</p>
+          </a>
+          <a class="card card-link" href="#" target="_blank" rel="noopener">
+            <span class="card-icon" aria-hidden="true">📝</span>
+            <h3>구글 폼으로 문의</h3>
+            <p>폼 주소를 넣을 자리</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자기소개 -->
+    <section id="about" class="section">
+      <div class="container reveal">
+        <h2>자기소개</h2>
+        <p class="section-lead">맡은 일은 끝까지 해내고, 함께 일하는 사람을 편하게 해 주는 사람이 되고 싶습니다. (예시 글이에요. 내 이야기로 바꿀 예정)</p>
+        <div class="cards cards-3">
+          <div class="card">
+            <h3>꼼꼼함</h3>
+            <p>작은 실수도 놓치지 않도록 두 번 확인합니다.</p>
+          </div>
+          <div class="card">
+            <h3>책임감</h3>
+            <p>약속한 날짜와 품질을 지킵니다.</p>
+          </div>
+          <div class="card">
+            <h3>소통</h3>
+            <p>쉽고 따뜻한 말로 먼저 다가갑니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 경력 -->
+    <section id="career" class="section section-tint">
+      <div class="container reveal">
+        <h2>경력</h2>
+        <ul class="timeline">
+          <li>
+            <p class="time">2023.03 – 현재</p>
+            <h3>○○회사 · 사무 담당</h3>
+            <p>예시 글: 문서 정리, 일정 관리, 고객 응대를 맡고 있어요.</p>
+          </li>
+          <li>
+            <p class="time">2020.01 – 2023.02</p>
+            <h3>△△회사 · 고객 지원</h3>
+            <p>예시 글: 고객 문의를 받고 해결했어요.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 자격사항 -->
+    <section id="license" class="section">
+      <div class="container reveal">
+        <h2>자격사항</h2>
+        <ul class="list">
+          <li><strong>컴퓨터활용능력 2급</strong><span>2022.06 · 대한상공회의소 (예시)</span></li>
+          <li><strong>운전면허 2종 보통</strong><span>2019.08 · 경찰청 (예시)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 학력 -->
+    <section id="education" class="section section-tint">
+      <div class="container reveal">
+        <h2>학력</h2>
+        <ul class="list">
+          <li><strong>○○대학교 · ○○학과</strong><span>2015.03 – 2019.02 · 졸업 (예시)</span></li>
+          <li><strong>○○고등학교</strong><span>2012.03 – 2015.02 · 졸업 (예시)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <h2>연락처</h2>
+        <ul class="list">
+          <li><strong>이메일</strong><span><a href="mailto:0000@gmail.com">0000@gmail.com</a></span></li>
+          <li><strong>활동 지역</strong><span>경기도 하남시</span></li>
+        </ul>
+        <a href="#contact-form" class="btn">연락하기</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">EUN</p>
+      <p>주소: 경기도 하남시 미사0000</p>
+      <p>이메일: <a href="mailto:0000@gmail.com">0000@gmail.com</a></p>
+      <p class="copy">© 2026 EUN</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
